@@ -304,10 +304,11 @@ toggle.addEventListener('click', () => {
             name.classList.add('all')
         }
     })
+    form.reset();
 })
 
+//clear btn
 clearBtn.addEventListener('click', () => {
-
     const countryList = document.querySelectorAll('.country-name');
     countryList.forEach((list) => {
         const checkbox = list.querySelector('.checkbox');
@@ -319,6 +320,7 @@ clearBtn.addEventListener('click', () => {
     if (circle.classList.contains('active')) {
         circle.classList.remove('active');
     }
+    form.reset();
 })
 
 
